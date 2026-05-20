@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - NodeServe</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="/home">NodeServe</a>
+    <a href="/home">Home</a>
+    <a href="/about" class="active">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/services">Services</a>
+  </nav>
+
+  <div class="section">
+    <h2>About this project</h2>
+    <p>This server was built as part of a Node.js fundamentals assignment. The goal was to understand how basic web servers handle requests and responses.</p>
+    <p>Every request is handled manually: reading the URL, matching a route, reading the HTML file from disk asynchronously, and writing the response with the correct status code and content type.</p>
+    <p>The CSS file is also served through the same server.</p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar">01</div>
+        <h4>Routing</h4>
+        <span>URL matching</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar">02</div>
+        <h4>File Serving</h4>
+        <span>fs.promises.readFile</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar">03</div>
+        <h4>Status Codes</h4>
+        <span>200, 301, 404, 500</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar">04</div>
+        <h4>Styling</h4>
+        <span>Shared CSS via /style.css</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

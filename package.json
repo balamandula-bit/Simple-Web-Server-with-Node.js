@@ -1,0 +1,11 @@
+{
+  "name": "assignment6-node-server",
+  "version": "1.0.0",
+  "description": "A simple Node.js web server using the built-in http module.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

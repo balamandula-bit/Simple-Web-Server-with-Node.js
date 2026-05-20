@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - NodeServe</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <nav>
+        <a class="brand" href="/home">NodeServe</a>
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/services" class="active">Services</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Server <span>features</span></h1>
+        <p>These are the main parts included in this assignment.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">01</div>
+            <h3>Multiple routes</h3>
+            <p>Routes for /home, /about, /contact, /services, and a fallback 404 are all resolved through a single request
+                handler.</p>
+        </div>
+        <div class="card">
+            <div class="icon">02</div>
+            <h3>Async file reads</h3>
+            <p>HTML files are read with <code>fs.promises.readFile</code>, so the file loading is asynchronous.</p>
+        </div>
+        <div class="card">
+            <div class="icon">03</div>
+            <h3>CSS serving</h3>
+            <p>The server handles <code>/style.css</code> and sends it with the correct content type.</p>
+        </div>
+        <div class="card">
+            <div class="icon">04</div>
+            <h3>Custom 404 page</h3>
+            <p>Unknown routes get a styled 404 page instead of a raw error.</p>
+        </div>
+        <div class="card">
+            <div class="icon">05</div>
+            <h3>Root redirect</h3>
+            <p>Visiting <code>/</code> automatically redirects to <code>/home</code> with a 301 status code.</p>
+        </div>
+        <div class="card">
+            <div class="icon">06</div>
+            <h3>500 error handling</h3>
+            <p>If a file read fails unexpectedly, the server catches the error and returns a 500 response gracefully.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

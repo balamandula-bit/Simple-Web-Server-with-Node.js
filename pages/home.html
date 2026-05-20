@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - NodeServe</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <nav>
+        <a class="brand" href="/home">NodeServe</a>
+        <a href="/home" class="active">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/services">Services</a>
+    </nav>
+
+    <div class="hero">
+        <h1>A simple server built with <span>Node.js</span></h1>
+        <p>This project uses the built-in <code>http</code> module to handle routes, serve pages, and show errors.</p>
+        <a href="/about" class="btn">Learn More</a>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">01</div>
+            <h3>No extra packages</h3>
+            <p>The server uses only the modules that come with Node.js.</p>
+        </div>
+        <div class="card">
+            <div class="icon">02</div>
+            <h3>Route handling</h3>
+            <p>Each route loads a different HTML file from the pages folder.</p>
+        </div>
+        <div class="card">
+            <div class="icon">03</div>
+            <h3>Error handling</h3>
+            <p>Invalid routes show a custom 404 page.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
