@@ -2,12 +2,15 @@
 
 A basic multi-route web server built with Node.js core modules only. It uses no Express and has no external dependencies.
 
+Live site: https://simple-web-server-nodejs.netlify.app/
+
 ## How to run
 
-Open a terminal in the project folder:
+Clone the repository and open the project folder:
 
 ```bash
-cd "c:\Users\bala mandula\OneDrive\Web Development\assignment6"
+git clone https://github.com/balamandula-bit/Simple-Web-Server-with-Node.js.git
+cd Simple-Web-Server-with-Node.js
 ```
 
 Start the server:
@@ -18,7 +21,7 @@ npm start
 
 You can also run it directly with `node server.js`.
 
-Then open your browser at `http://localhost:3000`.
+Then open your browser at `http://localhost:3000`. This local address will be the same for anyone running the project on their own computer, unless port `3000` is already being used by another app.
 
 ## Routes
 
@@ -56,13 +59,25 @@ Expected results:
 /wrong -> 404
 ```
 
+## Netlify deployment
+
+This project can also be published on Netlify as a static site. The `netlify.toml` file tells Netlify to publish the `pages` folder and keeps the routes working without adding `.html` in the browser.
+
+Live Netlify URL: https://simple-web-server-nodejs.netlify.app/
+
+In Netlify, use these settings:
+
+```text
+Build command: leave empty
+Publish directory: pages
+```
+
+The Node.js server is still included for the assignment and for local testing with `npm start`.
+
 ## Project structure
 
 ```text
 assignment6/
-|-- package.json
-|-- server.js
-|-- README.md
 |-- pages/
     |-- style.css
     |-- home.html
@@ -70,6 +85,11 @@ assignment6/
     |-- contact.html
     |-- service.html
     |-- 404.html
+|-- .gitignore
+|-- netlify.toml
+|-- package.json
+|-- README.md
+|-- server.js
 ```
 
 ## How it works
