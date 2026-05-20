@@ -59,20 +59,11 @@ Expected results:
 /wrong -> 404
 ```
 
-## Netlify deployment
+## Live site
 
-This project can also be published on Netlify as a static site. The `netlify.toml` file tells Netlify to publish the `pages` folder and keeps the routes working without adding `.html` in the browser.
+The project is also published here:
 
-Live Netlify URL: https://simple-web-server-nodejs.netlify.app/
-
-In Netlify, use these settings:
-
-```text
-Build command: leave empty
-Publish directory: pages
-```
-
-The Node.js server is still included for the assignment and for local testing with `npm start`.
+https://simple-web-server-nodejs.netlify.app/
 
 ## Project structure
 
